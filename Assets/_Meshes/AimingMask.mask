@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: AimingMask
+  m_Mask: 00000000000000000000000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: characterGeo
+    m_Weight: 0
+  - m_Path: pelvis
+    m_Weight: 0
+  - m_Path: pelvis/l_hip
+    m_Weight: 0
+  - m_Path: pelvis/l_hip/l_knee
+    m_Weight: 0
+  - m_Path: pelvis/l_hip/l_knee/l_ankle
+    m_Weight: 0
+  - m_Path: pelvis/l_hip/l_knee/l_ankle/l_ball
+    m_Weight: 0
+  - m_Path: pelvis/l_hip/l_knee/l_ankle/l_ball/l_toe
+    m_Weight: 0
+  - m_Path: pelvis/r_hip
+    m_Weight: 0
+  - m_Path: pelvis/r_hip/r_knee
+    m_Weight: 0
+  - m_Path: pelvis/r_hip/r_knee/r_ankle
+    m_Weight: 0
+  - m_Path: pelvis/r_hip/r_knee/r_ankle/r_ball
+    m_Weight: 0
+  - m_Path: pelvis/r_hip/r_knee/r_ankle/r_ball/r_toe
+    m_Weight: 0
+  - m_Path: pelvis/root
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/joint1
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/joint1/head
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/joint1/head/ponytailBase
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/joint1/head/ponytailBase/ponytailMid
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/joint1/head/ponytailBase/ponytailMid/ponytailEnd
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_breast
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_breast/l_breastEnd
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle/l_shoulder
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle/l_shoulder/l_elbow
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle/l_shoulder/l_elbow/l_wrist
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle/l_shoulder/l_elbow/l_wrist/l_fingerBase
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle/l_shoulder/l_elbow/l_wrist/l_fingerBase/l_fingerMid
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/l_clavicle/l_shoulder/l_elbow/l_wrist/l_fingerBase/l_fingerMid/l_fingerEnd
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/r_breast
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/r_breast/r_breastEnd
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle
+    m_Weight: 0
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle/r_shoulder
+    m_Weight: 1
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle/r_shoulder/r_elbow
+    m_Weight: 1
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle/r_shoulder/r_elbow/r_wrist
+    m_Weight: 1
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle/r_shoulder/r_elbow/r_wrist/r_fingerBase
+    m_Weight: 1
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle/r_shoulder/r_elbow/r_wrist/r_fingerBase/r_fingerMid
+    m_Weight: 1
+  - m_Path: pelvis/root/spineMid/neck/r_clavicle/r_shoulder/r_elbow/r_wrist/r_fingerBase/r_fingerMid/r_fingerEnd
+    m_Weight: 1

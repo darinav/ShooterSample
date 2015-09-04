@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: d3d5c202d64e3884f87b8eafc964c3d2
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - enemy: {fileID: 181474, guid: 87d4b26b0cd62b14980c9d33a148e7a7, type: 2}
+  - BloodSplat: {fileID: 133532, guid: eff5b87b1631b604a8b2766ef32a7cd0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 9c48eb51beac5b847b344122f04551bd
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - BloodSplat: {fileID: 133532, guid: eff5b87b1631b604a8b2766ef32a7cd0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
