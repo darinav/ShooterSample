@@ -59,13 +59,13 @@ public class EnemyMovement : MonoBehaviour
                     moveDirection = moveDirection.normalized;
                     lastMoveDirection = moveDirection;
                     lastPlayerPosition = player.transform.position;
-                    transform.Translate(moveDirection * EnemyMoveSpeed * Time.fixedDeltaTime, Space.World);
+                    transform.Translate(moveDirection * EnemyMoveSpeed * Time.deltaTime, Space.World);
                 }
                 else
                 {
                     if (Vector3.Distance(lastPlayerPosition, transform.position) > deltaMoveOffset)
                     {
-                        transform.Translate(lastMoveDirection * EnemyMoveSpeed * Time.fixedDeltaTime, Space.World);
+                        transform.Translate(lastMoveDirection * EnemyMoveSpeed * Time.deltaTime, Space.World);
                     }
                     else
                     {

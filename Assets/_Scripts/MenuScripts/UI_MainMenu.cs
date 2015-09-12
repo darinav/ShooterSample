@@ -4,7 +4,6 @@ using System.Collections;
 
 public class UI_MainMenu : MonoBehaviour
 {
-    public static Resolution CurrentRes;
     public Canvas MenuCanvas;
     public GameObject MenuPanel;
     public GameObject SettingsPanel;
@@ -21,8 +20,6 @@ public class UI_MainMenu : MonoBehaviour
         Settings = GetComponent<Button>();
         Quit = GetComponent<Button>();
 
-        CurrentRes = Screen.currentResolution;
-
         SettingsPanel.SetActive(false);
     }
 
@@ -35,7 +32,6 @@ public class UI_MainMenu : MonoBehaviour
     {
         SettingsPanel.SetActive(true);
         MenuPanel.SetActive(false);
-
     }
 
     public void OnQuitPress()

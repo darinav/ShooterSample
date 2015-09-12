@@ -5,15 +5,23 @@ using System.Collections;
 public class ResolutionManager : MonoBehaviour
 {    
     public Slider ResolutionSlider;
+    public Text ResolutionText;
     int[] lowestres = { 960, 540 };
     int[] lowres = { 1280, 720 };
     int[] midres = { 1600, 900 };
     int[] highres = { 1920, 1080 };
     Resolution desirableResolution;
-    
+    GameObject myEventSystem;
+
     public void OnTogglePress()
     {
         Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    void Start()
+    {
+        ResolutionText.text = Screen.width + "x" + Screen.height;
+        myEventSystem = GameObject.Find("EventSystem");
     }
 
     public void ValueChangeCheck()
@@ -38,11 +46,12 @@ public class ResolutionManager : MonoBehaviour
             desirableResolution.width = highres[0];
             desirableResolution.height = highres[1];
         }
+        ResolutionText.text = desirableResolution.width + "x" + desirableResolution.height;
     }        
 
     public void OnApplyPress()
     {
         Screen.SetResolution(desirableResolution.width, desirableResolution.height, Screen.fullScreen);
-        UI_MainMenu.CurrentRes = Screen.currentResolution;
+        myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
     }
 }
