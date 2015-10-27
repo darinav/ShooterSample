@@ -7,7 +7,6 @@ public class EnemyAttacks : MonoBehaviour
     public int attackDamage = 10;
     public GameObject BloodSplat;
 	public bool playerInRange = false;
-	public static EnemyAttacks Instance;
 
     Animator anim;
     GameObject player;  
@@ -21,7 +20,6 @@ public class EnemyAttacks : MonoBehaviour
         playerHealth = player.GetComponent <TP_Health> ();
         enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent <Animator>();
-		Instance = this;
     }
 
     void OnCollisionEnter (Collision other)
