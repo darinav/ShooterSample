@@ -104,11 +104,11 @@ public class TP_Controller : MonoBehaviour
             movementState = TP_Animator.IdleState;
         }
 
-        if (rigidbody.velocity.y > 4f && !IsGrounded())
+        if (GetComponent<Rigidbody>().velocity.y > 4f && !IsGrounded())
         {
             movementState = TP_Animator.JumpState;
         }
-        else if (rigidbody.velocity.y < -4f && !IsGrounded())
+        else if (GetComponent<Rigidbody>().velocity.y < -4f && !IsGrounded())
         {
             movementState = TP_Animator.FallState;
         }

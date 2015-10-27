@@ -54,7 +54,7 @@ public class Aiming : MonoBehaviour {
         //Vector3 randomTrajectoryOffset = new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), 0);
         GameObject shotGO = (GameObject)Instantiate(Bullet, FiringPoint.position, FiringPoint.rotation);
         Vector3 deltaPos = shootToRayHit - shotGO.transform.position;
-        shotGO.rigidbody.velocity = deltaPos.normalized * BulletSpeed;
+        shotGO.GetComponent<Rigidbody>().velocity = deltaPos.normalized * BulletSpeed;
         CurrentAmmoCount--;
     }
 

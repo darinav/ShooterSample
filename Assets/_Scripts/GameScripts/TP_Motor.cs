@@ -36,16 +36,16 @@ public class TP_Motor : MonoBehaviour
         }
         
         MoveVector *= Speed;
-        Vector3 currentVelocity = rigidbody.velocity;
+        Vector3 currentVelocity = GetComponent<Rigidbody>().velocity;
         Vector3 velocityChange = (MoveVector - currentVelocity);
         velocityChange.x = Mathf.Clamp(velocityChange.x, -MaxVelocityChange, MaxVelocityChange);
         velocityChange.z = Mathf.Clamp(velocityChange.z, -MaxVelocityChange, MaxVelocityChange);
         MoveVector = new Vector3(velocityChange.x, 0, velocityChange.z);
-        rigidbody.AddForce (MoveVector, ForceMode.VelocityChange);
+        GetComponent<Rigidbody>().AddForce (MoveVector, ForceMode.VelocityChange);
         
         if(canJump)
         {
-            rigidbody.velocity = new Vector3 (currentVelocity.x, CalculateJumpVerticalSpeed(), currentVelocity.z);
+            GetComponent<Rigidbody>().velocity = new Vector3 (currentVelocity.x, CalculateJumpVerticalSpeed(), currentVelocity.z);
             canJump = false;            
         }
 
@@ -54,7 +54,7 @@ public class TP_Motor : MonoBehaviour
 
     void ApplyGravity()
     {
-        rigidbody.AddForce(new Vector3(0, -Gravity * rigidbody.mass, 0));
+        GetComponent<Rigidbody>().AddForce(new Vector3(0, -Gravity * GetComponent<Rigidbody>().mass, 0));
     }
 
     void SnapAllingCharacterWithCamera()

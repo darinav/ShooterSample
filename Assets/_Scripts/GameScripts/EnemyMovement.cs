@@ -50,7 +50,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (Physics.Raycast(enemyEyePosition, lookDirection, out hitInfo, EnemyVisionLength, layerMask))
         {
-            if (hitInfo.distance >= collider.bounds.extents.z * 1.5f)
+            if (hitInfo.distance >= GetComponent<Collider>().bounds.extents.z * 1.5f)
             {
                 if (hitInfo.collider.gameObject == player && angle <= FieldOFViewAngle * 0.5f)
                 {

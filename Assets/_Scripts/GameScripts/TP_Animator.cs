@@ -110,7 +110,7 @@ public class TP_Animator : MonoBehaviour
         if (state == JumpState)
         {
             anim.SetBool("Jump", true);
-            anim.SetFloat("VerticalVelocity", rigidbody.velocity.y);
+            anim.SetFloat("VerticalVelocity", GetComponent<Rigidbody>().velocity.y);
         }
 
         if (state == FallState || state == LocoState || state == IdleState)
